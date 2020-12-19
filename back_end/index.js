@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 console.log("moi truong ", process.env.NODE_ENV);
 
 //connection string
-const mongoUri = `mongodb://${process.env.db_service_name}:${MONGO_PORT}/${process.env.db_name}`;
+const mongoUri = `mongodb+srv://lse-gen:hien00000@cluster0.dydgg.mongodb.net/learning?retryWrites=true&w=majority`;
 const mongoUriDev = `mongodb://localhost:${MONGO_PORT}/${process.env.DB_NAME}`;
 
 let db = mongoose.connection;
